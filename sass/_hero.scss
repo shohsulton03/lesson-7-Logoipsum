@@ -1,0 +1,134 @@
+.main {
+  margin-top: 110px;
+}
+
+.hero {
+  &__categories {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    overflow: auto;
+  }
+}
+
+.index__container {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 165px;
+  &-left {
+    width: 50%;
+  }
+  &-title {
+    font-size: 50px;
+    line-height: 57px;
+    color: $title-color;
+  }
+  &-description {
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: $txt-color;
+  }
+  &-link {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: $bg-py;
+  }
+}
+
+.second__index {
+  margin-top: 80px;
+}
+
+.order__left {
+  order: 0;
+}
+.order__right {
+  order: 1;
+}
+
+.marks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 138px;
+  gap: 75px;
+  &__container {
+    width: calc(33.3% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__img {
+    width: 151px;
+    height: 97px;
+  }
+  &__title {
+    margin-top: 7px;
+    font-size: 24px;
+    line-height: 36px;
+    color: $title-color;
+  }
+  &__description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $txt-color;
+  }
+}
+
+@media (max-width: 990px) {
+  .hero {
+    &__category {
+      width: 30%;
+    }
+  }
+  .index__container {
+    flex-wrap: wrap;
+    &-right {
+      text-align: center;
+    }
+    &-title {
+      font-size: 40px;
+      line-height: 47px;
+    }
+    &-description {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &-link {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+  .order__left {
+    order: 1;
+  }
+  .order__right {
+    order: 0;
+  }
+  .marks{
+    flex-wrap: wrap;
+    &__container{
+        width: calc(50% - 37.5px);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .index__container {
+    &-title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+  .marks{
+    &__container{
+        width: 100%;
+    }
+  }
+}

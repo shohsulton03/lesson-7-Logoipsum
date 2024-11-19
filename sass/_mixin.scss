@@ -1,0 +1,8 @@
+@mixin btn($bg: $bg-sy){
+    background: $bg;
+    padding: 19px 60px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 23px;
+}
